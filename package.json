@@ -18,6 +18,5 @@
   },
   "homepage": "https://github.com/eginwong/clearwater#readme",
   "dependencies": {
-    "express": "^4.16.4"
   }
 }

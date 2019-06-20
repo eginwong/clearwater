@@ -1,7 +1,9 @@
-const express = require ('express');
-const app = express ();
-const port = 3000;
+const binCon = require('./binaryConverter');
 
-app.get ('/', (req, res) => res.send ('Hello World!'));
+const currentDate = new Date().toString();
 
-app.listen (port, () => console.log (`Example app listening on port ${port}!`));
+console.log(currentDate);
+console.log("DAY: " + binCon.binaryDay(currentDate).toString());
+console.log("HOURS: " + binCon.binaryHour(currentDate).toString());
+console.log("MINUTES: " + binCon.binaryMinute(currentDate).toString());
+console.log("SECONDS: " + binCon.binarySecond(currentDate).toString());
